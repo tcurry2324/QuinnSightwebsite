@@ -1,0 +1,71 @@
+<style>
+    :root {
+      --primary: #1d1f33;
+      --secondary: #4f46e5;
+      --accent: #8b5cf6;
+      --light: #f9f9ff;
+      --dark: #121212;
+      --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+      --glass-bg: rgba(255, 255, 255, 0.1);
+      --glass-blur: blur(15px);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    body {
+      background-color: var(--light);
+      color: #333;
+      line-height: 1.6;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    header, section, footer {
+      scroll-margin-top: 80px;
+    }
+
+    .glass {
+      background: var(--glass-bg);
+      backdrop-filter: var(--glass-blur);
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    }
+
+    .btn {
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px) scale(1.02);
+    }
+
+    .nav-links a {
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: var(--accent);
+      transition: width 0.3s;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .service-card,
+    .resource-card,
+    .blog-card,
+    .testimonial,
+    .contact-form {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
