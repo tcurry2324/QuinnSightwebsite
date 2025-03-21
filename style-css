@@ -69,3 +69,71 @@
     .contact-form {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+.dark-mode body {
+      background-color: var(--dark);
+      color: #eee;
+    }
+
+    .dark-mode header,
+    .dark-mode footer,
+    .dark-mode .chatbot-container,
+    .dark-mode .contact-form,
+    .dark-mode .service-card,
+    .dark-mode .resource-card,
+    .dark-mode .blog-card {
+      background-color: #1f1f2e;
+      color: #eee;
+    }
+
+    .dark-toggle {
+      cursor: pointer;
+      background: none;
+      border: 2px solid white;
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    /* Chatbot Enhancements */
+    .chatbot-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .chatbot-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0.5rem;
+      font-weight: bold;
+    }
+
+    .chatbot-message {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .chatbot-message p {
+      background: #f0f0f7;
+      padding: 0.6rem 1rem;
+      border-radius: 12px;
+      max-width: 80%;
+    }
+
+    .chatbot-message.user p {
+      background: var(--accent);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Theme Toggle Button -->
