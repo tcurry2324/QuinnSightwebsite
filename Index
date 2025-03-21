@@ -8,3 +8,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<button class="dark-toggle" onclick="document.body.classList.toggle('dark-mode')" style="position: fixed; top: 20px; right: 20px; z-index: 999">Toggle Theme</button>
+
+  <!-- Lottie Animation Example -->
+  <section style="text-align:center; padding: 4rem 1rem; background-color: var(--light)">
+    <h2 data-aos="fade-up">Experience AI In Motion</h2>
+    <p data-aos="fade-up" data-aos-delay="100">A futuristic touch with dynamic animation</p>
+    <lottie-player
+      src="https://assets10.lottiefiles.com/packages/lf20_kyu7xb1h.json"
+      background="transparent"
+      speed="1"
+      style="max-width: 400px; margin: 2rem auto;"
+      loop
+      autoplay
+      data-aos="zoom-in"
+    ></lottie-player>
+  </section>
+</html>
